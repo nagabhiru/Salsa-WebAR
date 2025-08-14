@@ -1,0 +1,25 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server public -p 8080 --cors",
+    "serve": "http-server public -p 8080 --cors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagabhiru/Salsa-WebAR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nagabhiru/Salsa-WebAR/issues"
+  },
+  "homepage": "https://github.com/nagabhiru/Salsa-WebAR#readme",
+  "description": "",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Marker & QR Tools</title><style>body{font-family:system-ui;margin:1rem} .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))} section{border:1px solid #ddd;border-radius:.5rem;padding:1rem}</style></head><body>
+<h1>Tools</h1>
+<div class="grid">
+<section>
+<h2>QR Code</h2>
+<p>Enter a URL to generate a QR code.</p>
+<input id="qrurl" size="40" placeholder="https://example.com"/>
+<button onclick="makeQR()">Generate</button>
+<div id="qrcode"></div>
+</section>
+<section>
+<h2>Marker Instructions</h2>
+<ol>
+<li>Create a high-contrast image with the word <strong>SALSA</strong>.</li>
+<li>Open the AR.js Marker Training tool: <a href="https://ar-js-org.github.io/AR.js-Docs/marker-based/" target="_blank">AR.js Marker Tool</a>.</li>
+<li>Upload your SALSA image and export the <code>.patt</code> file.</li>
+<li>Save it as <code>/assets/markers/salsa.patt</code> in this project.</li>
+<li>Print the generated marker image for testing.</li>
+</ol>
+</section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script>function makeQR(){var el=document.getElementById(qrcode);el.innerHTML=;new QRCode(el,{text:document.getElementById(qrurl).value||location.origin,width:256,height:256});}</script>
+</body></html>
